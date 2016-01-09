@@ -17,3 +17,19 @@ support. Thus need to figure out:
 
 * which testing framework is suitable, and
 * how to enable the framework on the platform.
+
+## Node.js assert
+
+Creating Tests with the Node.js `assert` Module.
+
+> The Node.js assert testing module, imported using require(‘assert’), is
+utilized for internal Node.js tests and has become the basis for many
+third-party testing implementations. The assert module is created in such a way
+that if a particular condition is not met for your testing needs, it will throw
+an assertion error. If all passes, the Node.js process will exit as expected.
+
+Suppose Node.js is supported. Run this command:
+
+```sh
+node assert.js
+```
