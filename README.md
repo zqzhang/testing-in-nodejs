@@ -33,3 +33,28 @@ Suppose Node.js is supported. Run this command:
 ```sh
 node assert.js
 ```
+
+## Nodeunit
+
+Creating Tests with [nodeunit](https://github.com/caolan/nodeunit).
+
+> Nodeunit provides the same API as the assert module with the addition of two
+methods, `.done()` and `.expect(amount)`. To implement a test with nodeunit you
+need to export the tests from a module. The format of this export can help you
+to group your tests.
+
+To call a nodeunit test, you must first install nodeunit.
+
+```sh
+npm install –g nodeunit
+
+nodeunit nodeunit.js
+```
+
+If you meet "Error: Cannot find module 'nodeunit'", you can export `NODE_PATH`
+to be the output of `npm root -g`. See
+[this](http://www.hankcs.com/program/network/to-solve-the-node-js-error-cannot-find-module-node-static.html).
+
+```sh
+export NODE_PATH=`npm root -g`
+```
