@@ -58,3 +58,38 @@ to be the output of `npm root -g`. See
 ```sh
 export NODE_PATH=`npm root -g`
 ```
+
+## Mocha
+
+Creating Tests with [mocha](https://github.com/mochajs/mocha).
+
+> Mocha is a testing framework that can utilize any assertion module that you
+choose. It allows you to name your test suite and specific case in order to see
+the desired output from your tests.
+
+```js
+describe('Test suite', function() {
+
+    describe('test-case', function() {
+
+        // tests go here
+        it('should return true that 3 equals "3"', function() {
+
+            assert.equal(three, '3', '3 equals "3"');
+
+        });
+
+    });
+
+});
+```
+
+There are two main ways in which you can tell Mocha to perform its tests.
+
+```sh
+npm install –g mocha
+
+mocha mocha.js
+
+mocha
+```
